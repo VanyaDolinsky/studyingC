@@ -1,13 +1,8 @@
 #include <stdio.h>
 int main(void)
 {
-	float a, b, c;
-	printf ("Input a=");
-	scanf ("%f", &a);
-	printf ("Input b=");
-	scanf ("%f", &b);
-	c=a*b;
-	printf ("Result c=%.3f\n", c);
+	float a=123.45, b=9.876, c=45.6;
+	printf ("alpha=%7.2f\n beta=%8.3f\ngamma=%6.1f\n", a, b, c);
 	return 0;
 
 	
