@@ -6,8 +6,8 @@ int main(void)
 	scanf ("%f", &a);
 	printf ("Input b=");
 	scanf ("%f", &b);
-	c=a/b;
-	printf ("Result c=%f\n", c);
+	c=a*b;
+	printf ("Result c=%.3f\n", c);
 	return 0;
 
 	
