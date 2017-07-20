@@ -1,12 +1,16 @@
 #include <stdio.h>
-int main(void)
+int main()
 {
- int a, b, c;
+	int a, c, d, i;
 	printf ("Input a=");
-	scanf("%d", &a);
-	printf ("Input b=");
-	scanf("%d", &b);
-	c=a%b;
-		printf("Result c=%d\n", c);
-return 0;	
+	scanf("%4d", &a);
+	c=0;
+	for (i=0; i<4;i++)
+	{
+		d=a%10;
+		c=c+d;
+		a=a/10;
+	}
+	printf("Result c=%4d\n", c);
+	return 0;	
 }
