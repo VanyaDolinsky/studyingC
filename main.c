@@ -1,9 +1,12 @@
 #include <stdio.h>
 int main(void)
 {
-	float a=123.45, b=9.876, c=45.6;
-	printf ("alpha=%7.2f\n beta=%8.3f\ngamma=%6.1f\n", a, b, c);
-	return 0;
-
-	
+ int a, b, c;
+	printf ("Input a=");
+	scanf("%d", &a);
+	printf ("Input b=");
+	scanf("%d", &b);
+	c=a%b;
+		printf("Result c=%d\n", c);
+return 0;	
 }
