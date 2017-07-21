@@ -1,15 +1,17 @@
 #include <stdio.h>
 int main()
 {
-	int a;
+	int a, b, c, d;
 	printf("Input a=");
 	scanf("%d",&a);
-	if (a>0)
-		if (a%2==0)
-		 printf("all right/n");
+	printf("Input b=");
+	scanf("%d", &b);
+	c=a/b;
+	d=a+b;
+		if (a%b==0)
+		 printf("Result c=%d\n", c);
 			else
-			 printf("");
-	else
-			printf("");
+			printf("Result d=%d\n", d);
+
 	return 0;	
 }
