@@ -9,9 +9,9 @@ int main()
 	if(a!=b)
 		if (a>b)
 		 printf("a\n");
-			else
+		else
 		printf("b\n");
-			else
-		printf("");
+	else
+	printf("");
 	return 0;	
 }
