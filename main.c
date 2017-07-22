@@ -8,8 +8,8 @@ int main()
 	scanf("%d", &b);
 	if(a!=b)
 		if (a>b)
-		 printf("a\n");
+		 	printf("a\n");
 		else
-		printf("b\n");
+			printf("b\n");
 	return 0;	
 }
