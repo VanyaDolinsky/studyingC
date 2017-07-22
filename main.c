@@ -14,7 +14,7 @@ int main()
 	else
 	{
 		c=a+b;
-		printf("Result ñ=%d\n", c);
+		printf("Result c=%d\n", c);
 	}
 	return 0;	
 }
