@@ -5,6 +5,6 @@ int main()
 	printf("Input a=");
 	scanf("%d",&a);
 	if (a>0 && a%2==0)
-		 printf("all right/n");
+		 printf("all right\n");
 	return 0;	
 }
