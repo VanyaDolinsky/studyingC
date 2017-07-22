@@ -1,17 +1,20 @@
 #include <stdio.h>
 int main()
 {
-	int a, b, c, d;
+	int a, b, c;
 	printf("Input a=");
 	scanf("%d",&a);
 	printf("Input b=");
 	scanf("%d", &b);
-	c=a/b;
-	d=a+b;
-		if (a%b==0)
-		 printf("Result c=%d\n", c);
-			else
-			printf("Result d=%d\n", d);
-
+	if (a%b==0)
+	{
+		c=a/b;
+		printf("Result c=%d\n", c);
+	}
+	else
+	{
+		c=a+b;
+		printf("Result ñ=%d\n", c);
+	}
 	return 0;	
 }
