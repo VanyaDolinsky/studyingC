@@ -11,7 +11,5 @@ int main()
 		 printf("a\n");
 		else
 		printf("b\n");
-	else
-	printf("");
 	return 0;	
 }
