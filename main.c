@@ -9,6 +9,6 @@ int main()
 	if((x<=0 && x*x+y*y<=200*200 && y>=-x && y<=-x) || (x>=0 && x*x+y*y>=200*200 && x<=200 && y>=-200 && y<=200))
 		printf("all right\n");
 	else
-		printf("doesn't own");
+		printf("doesn't own\n");
 	return 0;	
 }
