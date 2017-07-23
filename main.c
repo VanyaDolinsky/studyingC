@@ -8,17 +8,17 @@ int main()
 	scanf("%d", &b);
 	printf ("Input c=");
 	scanf("%d", &c);
-	if((a-b)>0 && (a-c)>0)
+	if(a>b && a>c)
 		printf ("a\n");
-			if((b-a)>0 && (b-c)>0)
+	if(b>a && b>c)
 		printf ("b\n");
-			if((c-a)>0 && (c-b)>0)
-		printf ("b\n");
-			if (a==b && a>c && b>c)
+	if(c>a && c>b)
+		printf ("c\n");
+	if (a==b && a>c && b>c)
 		printf("a,b\n");
-			if(a==c && a>b && c>b) 
+	if(a==c && a>b && c>b) 
 		printf("a,c\n");
-			if(b==c && b>a && c>a)
+	if(b==c && b>a && c>a)
 		printf("b,c\n");
 	return 0;	
 }
