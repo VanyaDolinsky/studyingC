@@ -1,23 +1,31 @@
 #include <stdio.h>
 int main()
 {
-	int n, k, s, h;
-	h=1;
+	int k;
+	float n, res=1.0f;
 	printf("Input n=");
-	scanf("%d", &n);
+	scanf("%f", &n);
 	printf("Input k=");
 	scanf("%d", &k);
 	if (k==0)
 	{
-		printf("1\n");
+		res=1;
+	}
+	else if(k>0)
+	{
+		for(int i=1; i<=k; i++)
+		{
+			res*=n;
+		}	
 	}
 	else
 	{
-		for(s=1; s<=k; s++)
+		for(int i=-1; i>=k; i--)
 		{
-			h=h*n;
-		}
-		printf("Result h=%d\n", h);
-	}		
+			res/=n;
+		}	
+	}
+
+	printf("Result res=%f\n", res);		
 	return 0;	
 }
