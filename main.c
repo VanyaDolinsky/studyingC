@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main()
 {
-	int a, b, c;
+	int a, res=0;
 	printf("Input a=");
 	scanf("%d", &a);
-	printf("Input b=");
-	scanf("%d", &b);
-	c=0;
-	while (a>0 && b>0)
+	
+	while (a!=0)
 	{
-		c+=a+b;
+		res+=a;
+		printf("Input a=");
+		scanf("%d", &a);
 	}
-	printf("Result c=%d\n", c);
+	printf("Result res=%d\n", res);
 	return 0;	
 }
