@@ -5,9 +5,9 @@ int main()
 	float m;
 	printf("Input m=");
 	scanf("%f", &m);
-	for (k=0; res<m; k++)
+	for (k=0; res<=m; k++)
 	{
-	res*=3;
+		res*=3;
 	}
 	printf("Result k=%d\n", k);
 
