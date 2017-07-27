@@ -6,11 +6,10 @@ int main()
 	scanf ("%d", &k);
 	for (i=0; i<k; i++)
 	{
+		printf("%d\n", m);
 		res=m+s;
 		m=s;
 		s=res;
-		printf("%d\n" , m);
-		printf("%d\n", res);
 	}
 	m=1;
 	s=1;
