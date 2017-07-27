@@ -12,13 +12,13 @@ int main()
 		printf("%d\n" , m);
 		printf("%d\n", res);
 	}
-			m=1;
-			s=1;
-		for (b=0; b<2147483647; b++)
+	m=1;
+	s=1;
+	for (b=0; b<2147483647; b++)
 	{
-			a=m+s;
-			m=s;
-			s=a;
+		a=m+s;
+		m=s;
+		s=a;
 	}
 	printf("%d\n" , a);
 
