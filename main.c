@@ -1,20 +1,19 @@
 #include <stdio.h>
 int main()
 {
-	int n, i, sum, c, k, h;
+	int n, i, sum=0, c, paf, power=1;
 	printf("Input n=");
 	scanf("%d", &n);
-	for (i=1; i<=n; i++);
-	{
 		for (c=1; c<=n; c++)
 		{
-			k=c*i;
-			h=i;
-			h*=k;
-			sum+=h;
-			printf("%d\n", sum);
+			power = 1;
+			for(paf=1; paf<=n; paf++)
+			{
+				power*=n;
+				sum+=power;
 			}
+
+			printf("%d\n", sum);
 		}
-	}
 	return 0;	
 }
