@@ -11,8 +11,8 @@ int main()
 		{
 			sum+=exp(sqrt(n));
 		}
-			printf("N=%d\n", N);
-			printf("sum=%f\n", sum);
+		printf("N=%d\n", N);
+		printf("sum=%f\n", sum);
 	}
 	return 0;	
 }
