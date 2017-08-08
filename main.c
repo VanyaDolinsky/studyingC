@@ -23,25 +23,22 @@ int main()
 	printf("%f\n", sum);
 	k=n/10000;
 
-	n = 1;
+	n = 2;
 	sum=0;
 	double sum_prev=0;
 	k=1;
-	while(k>0.0001)
+	while(k>1e-5f)
 	{
 		sum = 0;
 		for(int i = 1; i < n; i++)
 		{
-			sum+=(double)i/(i*i);
+			sum+=(double)i/(n*n);
 		}
-		printf("sum = %f\n", sum);
-		printf("sum_prev = %f\n", sum_prev);
 		k = sum - sum_prev;
 		sum_prev = sum;
 		n++;
 	}
-	/*printf("%f\n", n);
-	printf("%f\n", sum);*/
+	printf("%f\n", n);
 
 	return 0;	
 }
