@@ -1,17 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 int main()
 {
-	int a = 5;
-	printf("a = %d\n", a); // выводит значение a
-	printf("ss_a = %d\n", &a); // выводит адрес ячейки в памяти, которая хранит значение a
-	int *b = &a;
-	
-	printf("\n\n"); 
-	
-	*b = 10;
-	printf("a = %d\n", a); 
-	printf("b = %d\n", b);
-	printf("value_b = %d\n", *b);
-
+	srand( time( NULL ) );
+	int a[15];
+	for(int i=0; i<15; i++)
+	{
+		a[i]=rand()% 12 + 1;
+		printf("%d ", a[i]); 
+	}
 	return 0;	
 }
