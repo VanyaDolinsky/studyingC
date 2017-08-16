@@ -4,7 +4,7 @@
 int main()
 {
 	srand( time(NULL) );
-	int k[12], min, max, i, a, sum=0, e=0, e1=0;
+	int k[12], min, max, i, a, sum=0, e=0, e1=0, *p, *p1;
 	double  m;
 	printf("Input min=");
 	scanf("%d", &min);
@@ -12,28 +12,30 @@ int main()
 	scanf("%d", &max);
 	printf("Input a=");
 	scanf("%d", &a);
-	for (i=0; i<11; i++)
+	for (i=0; i<12; i++)
 	{
 		k[i]=rand() %(max-min) + min;
 		printf("%d ", k[i]);
 	}
-	for (i=0; i<11; i++)
+	for (i=0; i<12; i++)
 	{
 		if(a<k[i])
 		{
-		sum+=k[i];
-		e++;
+			sum+=k[i];
+			e++;
 		}
 	}
 	m=sum/e;
 	printf("m=%f ", m);
-	for (i=0; i<11; i++)
+	p1=&k[11];
+	printf("\n\n\n");
+	for (p=&k[0]; p<=p1; p++)
 	{
-		if(m<k[i])
+		if(m<*p)
 		{
-		e1++;
+			e1++;
 		}
 	}
-	printf("e1=%d", e1);
+	printf("e1=%d\n", e1);
 	return 0;	
 }
