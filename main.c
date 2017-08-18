@@ -1,6 +1,6 @@
 #include <stdio.h>
 float Square(float a, float b);
-float Perimetr(float a, float b);
+float Perimeter(float a, float b);
 int main()
 {
 	float a, b, S, P;
@@ -9,7 +9,7 @@ int main()
 	printf("Input b=");
 	scanf("%f", &b);
 	S=Square(a, b);
-	P=Perimetr(a, b);
+	P=Perimeter(a, b);
 	printf("s=%f\n", S);
 	printf("p=%f\n", P);
 	return 0;	
@@ -21,7 +21,7 @@ float Square(float a, float b)
 	S=a*b;
 	return S;
 }
-float Perimetr(float a, float b)
+float Perimeter(float a, float b)
 {
 	float P;
 	P=(a+b)*2;
