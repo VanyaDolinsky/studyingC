@@ -13,9 +13,9 @@ int main()
 	scanf("%f", &c);
 	func(a, b, c, &x1, &x2);
 	if ((b*b-4*a*c)>0)
-	printf("%f\n%f\n", x1, x2);
+		printf("%f\n%f\n", x1, x2);
 	if ((b*b-4*a*c)==0)
-	printf("%f\n", x1);
+		printf("%f\n", x1);
 	return 0;	
 }
 
