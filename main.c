@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <math.h>
-float fact(float *, float *);
+int fact(float *, int *);
 int main(void) {
-	float n, a;
-	float k;
+	float a;
+	int n, k;
 	printf("Input a:");
 	scanf("%f", &a);
 	printf("Input n:");
-	scanf("%f", &n);
-	k=fact(&a, &n);
-	printf("Factorial k=%f\n", k);
+	scanf("%d", &n);
+	k=fact(a, &n);
+	printf("Factorial k=%d\n", k);
 return 0;
 }
-float fact(float *i, float *n) {
+int fact(int i,int *n) {
 	if (n==0)
-		return 1;
+		return i;
 	else
 		n--;
-		return fact(sqrt(*i+fact(*i)));
+		return fact((float)sqrt(*i+fact(*i)),&n);
 }
