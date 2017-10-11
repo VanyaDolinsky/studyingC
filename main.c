@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int fullArr(int *, int );
-int changeArr(int *, int);
+void changeArr(int a[], int h);
+void fullArr(int a[], int size);
 int main()
 {
 	int a[10];
@@ -17,20 +17,18 @@ int main()
 	}
 	return 0;	
 }
-int fullArr(int a[], int size)
+void fullArr(int a[], int size)
 {
 	srand( time( 0 ) );
 	for(int i=0; i<size; i++)
 	{
 		a[i]=rand()% 15 + 1;
 	}
-	return 0;
-}	
-int changeArr(int a[], int h)
+}
+void changeArr(int a[], int h)
 {
 	int tmp;
 	tmp = a[0];
 	a[0] = a[h];
 	a[h]  = tmp;
-	return 0;
 }	
