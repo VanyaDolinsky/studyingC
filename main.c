@@ -1,21 +1,51 @@
 #include <stdio.h>
 int main()
 {
-	FILE *f;
-	int sum=0, size=0, a[100];
-	f=fopen("input.txt", "r");
-	for (int i=0; !feof(f); i++)
+	int m, n, min=1010, min1=1010, s=0;
+	int a[100], b[100];
+	scanf("%d", &n);
+	scanf("%d", &m);
+	if (n>0)
 	{
-		fscanf(f, "%d", &a[i]);
-		size++;
+		for (int i=0; i<n; i++)
+		{
+			scanf("%d ", &a[i]);
+		}
 	}
-	fclose(f);
-	f=fopen("output.txt", "w");
-	for(int i=0; i<size; i++)
+	if (m<=9 && m!=0)
 	{
-		sum+=a[i];	
+		for (int i=0; i<m; i++)
+		{
+			scanf("%d ", &b[i]);
+		}
 	}
-	fprintf(f, "%d ", sum);
-	fclose(f);
+	for (int i=0; i<n; i++)
+	{
+		if (min>a[i])
+		{
+			min=a[i];
+		}
+	}
+	for (int i=0; i<m; i++)
+	{
+		if (min1>b[i])
+		{
+			min1=b[i];
+		}
+	}
+	if (min>min1 && min!=min1)
+	{
+		s=min1*10+min;
+	}
+	if (min<min1 && min!=min1)
+	{
+		s=min*10+min1;
+	}
+	if (min==min1)
+	{
+		s=min;
+	}
+	printf("%d\n", s);
 	return 0;	
 }
+
